@@ -6,6 +6,7 @@ MESSAGE(STATUS ${CMAKE_SYSTEM_NAME})
 
 #添加头文件搜索路径
 include_directories($ENV{BOOST_INCLUDE})
+include_directories(./)
 #添加库文件搜索路径
 link_directories($ENV{BOOST_LIB})
 project(ctest)
