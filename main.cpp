@@ -1,7 +1,7 @@
 // Copyright 20019 <zhi.zhou>.
 #include <boost/winapi/time.hpp>
 #include <iostream>
-#include "main.h"  // NOLINT
+#include "main.h"  // NOLINT(build/include)
 
 int main() {
   double start1 = GetTickCount();
