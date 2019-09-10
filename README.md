@@ -10,8 +10,14 @@ mingw-w64安装时的选择配置参考[mingw w64 安装问题](https://zhidao.b
 ```bash
 mkdir build
 cd build
-cmake .. // 默认平台编译,win下使用msvs,linux下使用gcc
+cmake .. // 默认平台编译,win下使用msvs或者可以指定vs版本 cmake -G "Visual Studio 15" ..
+// linux下使用gcc
+
 // win下用vs打开进行build
+"start libevent.sln" and build with menu in Visual Studio.
+// 或使用命令行
+cmake --build . --config Release
+
 // linux下
 make
 ```
